@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Datos Personales</title>
+
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #bababa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.mt-5 {
+    margin-top: 3rem !important;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.col-form-label {
+    font-weight: bold;
+    color: #000000;
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 0.375rem 0.75rem;
+    box-shadow: none;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.back-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 576px) {
+    .col-sm-3, .col-sm-9, .col-sm-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .form-group.row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.back-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #007bff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.back-button a:hover {
+    background-color: #4abd59;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="container mt-5">
+        <form>
+            <div class="form-group row">
+                <label for="nombre" class="col-sm-3 col-form-label">Nombre</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="nombre" name="nombre">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="apellido" class="col-sm-3 col-form-label">Apellido</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="apellido" name="apellido">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Fecha de Nacimiento</label>
+                <div class="col-sm-3">
+                    <select class="form-control" id="dia-nacimiento" name="dia-nacimiento">
+                        <option value="">Día</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                    </select>
+                </div>
+                <div class="col-sm-3">
+                    <select class="form-control" id="mes-nacimiento" name="mes-nacimiento">
+                        <option value="">Mes</option>
+                        <option value="01">Enero</option>
+                        <option value="02">Febrero</option>
+                        <option value="03">Marzo</option>
+                        <option value="12">Abril</option>
+                    </select>
+                </div>
+                <div class="col-sm-3">
+                    <select class="form-control" id="ano-nacimiento" name="ano-nacimiento">
+                        <option value="">Año</option>
+                        <!-- Agregar años desde 2002 hasta 2029 -->
+                        <option value="2002">2022</option>
+                        <option value="2003">2023</option>
+                        <option value="2004">2024</option>
+                        <option value="2029">2025</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="pais-nacimiento" class="col-sm-3 col-form-label">País de Nacimiento</label>
+                <div class="col-sm-9">
+                    <select class="form-control" id="pais-nacimiento" name="pais-nacimiento">
+                        <option disabled selected>Seleccione un país</option>
+                        <option>México</option>
+                        <option>Estados Unidos</option>
+                        <option>Canadá</option>
+                        <option>Reino Unido</option>
+                        <option>Francia</option>
+                        <option>España</option>
+                        <option>Italia</option>
+                        <option>Alemania</option>
+                        <option>Brasil</option>
+                        <option>Argentina</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="nacionalidad" class="col-sm-3 col-form-label">Nacionalidad</label>
+                <div class="col-sm-9">
+                    <select class="form-control" id="nacionalidad" name="nacionalidad">
+                        <option disabled selected>Seleccione una nacionalidad</option>
+                        <option>Mexicana</option>
+                        <option>Estadounidense</option>
+                        <option>Canadiense</option>
+                        <option>Británica</option>
+                        <option>Francesa</option>
+                        <option>Española</option>
+                        <option>Italiana</option>
+                        <option>Alemana</option>
+                        <option>Brasileña</option>
+                        <option>Argentina</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="numero-pasaporte" class="col-sm-3 col-form-label">Número de Pasaporte</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="numero-pasaporte" name="numero-pasaporte">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="destino-paquete" class="col-sm-3 col-form-label">Destino del Paquete</label>
+                <div class="col-sm-9">
+                    <select class="form-control" id="destino-paquete" name="destino-paquete">
+                        <option disabled selected>Seleccione un destino</option>
+                        <option>México</option>
+                        <option>Estados Unidos</option>
+                        <option>Canadá</option>
+                        <option>Reino Unido</option>
+                        <option>Francia</option>
+                        <option>España</option>
+                        <option>Italia</option>
+                        <option>Alemania</option>
+                        <option>Brasil</option>
+                        <option>Argentina</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Fecha de Emisión de Pasaporte</label>
+                <div class="col-sm-3">
+                    <select class="form-control" id="dia-emision" name="dia-emision">
+                        <option value="">Día</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="31">04</option>
+                    </select>
+                </div>
+                <div class="col-sm-3">
+                    <select class="form-control" id="mes-emision" name="mes-emision">
+                        <option value="">Mes</option>
+                        <option value="01">Enero</option>
+                        <option value="02">Febrero</option>
+                        <option value="03">Marzo</option>
+                        <option value="12">Abril</option>
+                    </select>
+                </div>
+                <div class="col-sm-3">
+                    <select class="form-control" id="ano-emision" name="ano-emision">
+                        <option value="">Año</option>
+                        <option value="2002">2022</option>
+                        <option value="2003">2023</option>
+                        <option value="2004">2024</option>
+                        <option value="2029">2025</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Fecha de Vencimiento de Pasaporte</label>
+                <div class="col-sm-3">
+                    <select class="form-control" id="dia-vencimiento" name="dia-vencimiento">
+                        <option value="">Día</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="31">05</option>
+                    </select>
+                </div>
+                <div class="col-sm-3">
+                    <select class="form-control" id="mes-vencimiento" name="mes-vencimiento">
+                        <option value="">Mes</option>
+                        <option value="01">Enero</option>
+                        <option value="02">Febrero</option>
+                        <option value="03">Marzo</option>
+                        <option value="12">Abril</option>
+                    </select>
+                </div>
+                <div class="col-sm-3">
+                    <select class="form-control" id="ano-vencimiento" name="ano-vencimiento">
+                        <option value="">Año</option>
+                        <option value="2002">2022</option>
+                        <option value="2003">2023</option>
+                        <option value="2004">2024</option>
+                        <option value="2029">2025</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+        <div class="back-button">
+            <a href="indnex - copia.html">Regresar al Inicio</a>
+        </div>
+    </div>
+</body>
+</html>

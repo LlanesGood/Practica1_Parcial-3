@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CristianGle</title>
+    <style>
+body {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7fafc; /* bg-gray-100 */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #2d372c;
+    padding: 1rem; /* px-4 */
+}
+
+h1 {
+    font-size: 4.50rem;
+    font-weight: bold;
+    color: #000000; 
+    margin-top: 6rem; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem; 
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000000; 
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #676c75; /* bg-blue-500 */
+    color: #fff;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem; /* p-6 */
+    border-radius: 0.5rem;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    appearance: none;
+    background: transparent;
+    border: none;
+    width: 100%;
+    color: #000000; /* text-gray-700 */
+    margin-right: 0.75rem; /* mr-3 */
+    padding: 0.25rem 0.5rem; /* py-1 px-2 */
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+button {
+    background-color: #45b14c;
+    border: 2px solid #45b14c;
+    color: #fff;
+    padding: 0.25rem 2.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+button:hover {
+    background-color: hwb(224 26% 19%); 
+    border-color: #4a72d7; 
+}
+
+button:focus {
+    outline: none;
+}
+
+.back-button {
+    text-align: center;
+    margin-top: 1rem; 
+}
+
+.back-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 4px;
+    text-decoration: blanchedalmond;
+    transition: background-color 0.3s;
+}
+
+.back-button a:hover {
+    background-color: #3b4840;
+}
+
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto mt-12 px-4">
+        <div class="text-center mb-8">
+            <h1 class="text-8xl font-bold text-black-500 mt-5">CristianGle</h1>
+        </div>
+        <div class="navbar flex justify-center space-x-4 mb-8">
+            <a href="https://www.pexels.com/es-es/">Imágenes</a>
+            <a href="https://www.Youtube.com">Videos</a>
+            <a href="https://www.yucatan.com.mx/">Noticias</a>
+            <a href="https://www.google.com/maps ">Maps</a>
+            <a href="https://deepl.com">Traductor</a>
+        </div>
+        <form action="https://www.google.com/search" method="GET" class="max-w-lg mx-auto form-container p-6 mb-8">
+            <div class="flex items-center border-b border-b-2 border-blue-500 py-2">
+                <input type="text" name="q" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" placeholder="Buscar en CristianGle" autofocus>
+                <button type="submit" class="flex-shrink-0 bg-blue-500 hover:bg-blue-700 border-blue-500 hover:border-blue-700 text-sm border-4 text-white py-1 px-2 rounded focus:outline-none">Buscar</button>
+            </div>
+        </form>
+        </div>
+        <div class="back-button">
+            <a href="indnex - copia.html">Regresar al Inicio</a>
+    </div>
+</body>
+</html>

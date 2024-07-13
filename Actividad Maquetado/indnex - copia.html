@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Tareas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+    
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #141E30;  /* Fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #243B55, #141E30); 
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+    
+        .menu-header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #00C9FF;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+    
+        .menu-header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #00C9FF;
+            text-shadow: 0 0 10px #00C9FF, 0 0 20px #00C9FF, 0 0 30px #00C9FF;
+        }
+    
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+    
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 30px;
+        }
+    
+        .menu-item {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+    
+        .menu-item:hover {
+            transform: translateY(-15px) scale(1.05);
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.6);
+        }
+    
+        .menu-item-content {
+            padding: 20px;
+        }
+    
+        .menu-item-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #00C9FF;
+            text-shadow: 0 0 5px #00C9FF;
+            margin-bottom: 10px;
+        }
+    
+        .menu-item-link {
+            display: block;
+            text-align: center;
+            padding: 15px;
+            background: linear-gradient(90deg, #00C9FF, #92FE9D);
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.4s ease;
+        }
+    
+        .menu-item-link:hover {
+            background: linear-gradient(90deg, #92FE9D, #00C9FF);
+        }
+    
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.9);
+            color: #00C9FF;
+            padding: 20px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+        }
+    
+        .row span {
+            margin: 0 15px;
+            font-weight: bold;
+            text-shadow: 0 0 5px #00C9FF;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="menu-header">
+        <h1 class="text-3xl font-bold">Menú</h1>
+    </div>
+    <div class="container mx-auto mt-12">
+        <div class="grid gap-6">
+            <div class="menu-item">
+                <div class="menu-item-content">
+                    <p class="menu-item-title">PRACTICA 1</p>
+                </div>
+                <a href="Maquetado.html.html" class="menu-item-link">Ir</a>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-content">
+                    <p class="menu-item-title">PRACTICA 2</p>
+                </div>
+                <a href="Maquetado2.html" class="menu-item-link">Ir</a>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-content">
+                    <p class="menu-item-title">PRACTICA 3</p>
+                </div>
+                <a href="CristianGle.html" class="menu-item-link">Ir</a>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-content">
+                    <p class="menu-item-title">PRACTICA 4</p>
+                </div>
+                <a href="productos.html" class="menu-item-link">Ir</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <span>Cristian Isaac Llanes Puc</span>
+        <span>Aplicaciones WEB</span>
+        <span>Parcial 3</span>
+        <span>Tercer Cuatrimestre</span>
+    </div>
+</body>
+</html>

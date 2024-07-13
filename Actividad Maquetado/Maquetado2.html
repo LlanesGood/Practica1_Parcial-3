@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Maquetado</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #bababa;
+    color: #212529;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #9b9b9b;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    
+}
+
+.col-form-label {
+    font-weight: bold;
+    color: #000000;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+/* Back Button Styles */
+.back-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #007bff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.back-button a:hover {
+    background-color: #4abd59;
+}
+</style>
+
+</head>
+<body>
+    <div class="container mt-5">
+        <form>
+            <div class="form-group row">
+                <label for="nombre" class="col-sm-3 col-form-label">Nombre</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="nombre" name="nombre">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="correo" class="col-sm-3 col-form-label">Correo Electrónico</label>
+                <div class="col-sm-9">
+                    <input type="email" class="form-control" id="correo" name="correo">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="url" class="col-sm-3 col-form-label">URL</label>
+                <div class="col-sm-9">
+                    <input type="url" class="form-control" id="url" name="url">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Fecha</label>
+                <div class="col-sm-3">
+                    <input type="date" class="form-control" id="fecha" name="fecha">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Hora</label>
+                <div class="col-sm-3">
+                    <input type="time" class="form-control" id="hora" name="hora">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Fecha y Hora</label>
+                <div class="col-sm-3">
+                    <input type="date" class="form-control" id="fecha-hora" name="fecha-hora">
+                </div>
+                <div class="col-sm-3">
+                    <input type="time" class="form-control" id="hora" name="hora">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="mes" class="col-sm-3 col-form-label">Mes</label>
+                <div class="col-sm-3">
+                    <input type="number" class="form-control" id="mes" name="mes" min="1" max="12">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="semana" class="col-sm-3 col-form-label">Semana</label>
+                <div class="col-sm-3">
+                    <input type="number" class="form-control" id="semana" name="semana" min="1" max="4">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="numero" class="col-sm-3 col-form-label">Número (Min -10, Max 10)</label>
+                <div class="col-sm-3">
+                    <input type="number" class="form-control" id="numero" name="numero" min="-10" max="10">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="telefono" class="col-sm-3 col-form-label">Teléfono</label>
+                <div class="col-sm-9">
+                    <input type="tel" class="form-control" id="telefono" name="telefono">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="termino-busqueda" class="col-sm-3 col-form-label">Término de Búsqueda</label>
+                <div class="col-sm-9">
+                    <input type="search" class="form-control" id="termino-busqueda" name="termino-busqueda">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="color-favorito" class="col-sm-3 col-form-label">Color Favorito</label>
+                <div class="col-sm-3">
+                    <input type="color" class="form-control" id="color-favorito" name="color-favorito">
+                </div>
+            </div>
+        </form>
+        <div class="back-button">
+            <a href="indnex - copia.html">Regresar al Inicio</a>
+        </div>
+    </div>
+</body>
+</html>
